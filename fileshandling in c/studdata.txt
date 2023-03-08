@@ -1,0 +1,7 @@
+Name	Branch	Roll_No	Age
+Nishant raj		CSe	22401	18
+Suhani		CSE	22439	18
+Simmran Kuamri		BSC	22956	18
+Alex		CSE	22436	18
+alice		eee	22356	19
+Sweta		3DAG		22626		20
