@@ -1,4 +1,6 @@
+//nishant raj 22401
 #include <stdio.h>
+
 int swap(int *a, int *b)
 {
     int temp = *a;
