@@ -1,62 +1,60 @@
 #include <stdio.h>
+int printarr(int *arr,int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d  ",arr[i]);
+    }
+    
+}
 int merge(int arr[], int low, int mid, int up)
 {
     int i,j,k;
-    int m=mid-low+1;
-    int n=up-mid;
-    int lower[m],upper[n];
-    for (i = 0; i <m ; i++)
+    i=low;
+    j=mid+1;
+    k=low;
+    int B[100];
+    while (i<=mid && j<=up)
     {
-        lower[i]=arr[low+1];
-    }
-    for (j = 0; j <m ; j++)
-    {
-        upper[j]=arr[mid+1+j];
-    }
-    
-    i = low; 
-    j = mid + 1;
-    k = low;
-    
-    while (i <= m && j <= n)
-    {
-        if (lower[i] <= upper[j])
+        if (arr[i]<arr[j])
         {
-            arr[k] = lower[i];
+            B[k]=arr[i];
             i++;
+            k++;
         }
         else
         {
-            arr[k] = upper[j];
+            B[k]=arr[j];
             j++;
+            k++;
         }
+        
+        
+    }
+    while (i<=mid)
+    {
+        B[k]=arr[i];
+        j++;
         k++;
     }
-    if (i > mid)
+    while (j<=up)
     {
-        while (j <= up)
-        {
-            lower[k] = arr[j];
-            j++;
-            k++;
-        }
+        B[k]=arr[j];
+        k++;
+        j++;
     }
-    else
+    for ( int x = low; x <=up; x++)
     {
-        while (i <= mid)
-        {
-            upper[k] = arr[j];
-            i++;
-            k++;
-        }
+        arr[x]=B[x];
     }
     
+
 }
 int mergesort(int arr[], int low, int up)
 {
     if (low < up)
     {
-        int mid = (low + up) / 2;
+        int mid = (low + up)/2;
         mergesort(arr, low, mid);
         mergesort(arr, mid + 1, up);
         merge(arr, low, mid, up);
@@ -76,11 +74,8 @@ int main()
         printf("...>");
         scanf("%d", &arr[i]);
     }
+    printarr(arr,n);
     mergesort(arr, 0, n - 1);
-    printf("Sorted array is ");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d   ", arr[i]);
-    }
+    printarr(arr,n);
     return 0;
 }
