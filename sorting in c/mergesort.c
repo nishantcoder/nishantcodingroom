@@ -5,7 +5,7 @@ int printarr(int *arr,int n)
     {
         printf("%d  ",arr[i]);
     }
-    
+    printf("\n");
 }
 int merge(int arr[], int low, int mid, int up)
 {
@@ -34,7 +34,7 @@ int merge(int arr[], int low, int mid, int up)
     while (i<=mid)
     {
         B[k]=arr[i];
-        j++;
+        i++;
         k++;
     }
     while (j<=up)
