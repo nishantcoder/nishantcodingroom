@@ -12,6 +12,6 @@ int main()
         
     }
     printf("the no.of lines in file is %d",count);
-
+    fclose(fp);
 
 }
