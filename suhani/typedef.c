@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    typedef int suhani;
-    suhani roll=224350;
-    printf("%d",roll);
+    typedef int gaurav;
+    gaurav marks=80;
+    printf("%d",marks);
 }
