@@ -10,5 +10,7 @@ int main()
         *ptr=*ptr+i;
     }
     printf("the sum of no. btw 100 to 200 is %d",*ptr);
+     printf("the sum of no. btw 100 to 200 is %d",start);
+     
 
 }
