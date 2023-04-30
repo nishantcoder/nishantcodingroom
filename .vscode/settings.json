@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "servo.h": "c",
-        "FSEEK.C": "cpp"
+        "FSEEK.C": "cpp",
+        "stdio.h": "c"
     }
 }
