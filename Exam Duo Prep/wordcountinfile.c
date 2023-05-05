@@ -1,11 +1,12 @@
 #include<stdio.h>
+#include <stdlib.h>
 int main()
 {
     
     FILE *fp;
     int count=1;
     char ch;
-    fp=fopen("suhani.txt","r");
+    fp=fopen("file.txt","r");
     if (fp==NULL)
     {
         printf("error");
@@ -14,10 +15,10 @@ int main()
 
     while((ch=fgetc(fp))!=EOF)
     {
-        if(ch=='\n')
+        if(ch==' ')
         count++;
     }
     fclose(fp);
-    printf("no. of lines is %d",count);
+    printf("no. of words is %d",count);
 }
 
