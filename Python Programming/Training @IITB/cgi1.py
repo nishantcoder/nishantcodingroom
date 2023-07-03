@@ -1,0 +1,12 @@
+#!C:\Program Files\Python310\python.exe
+print("content-type:text/html\r\n\r\n")
+print('<html>')
+print('<head>')
+print('<title>Nishu CGI</title>')
+print('</head>')
+print('<body>')
+print('<center>')
+print('<h3>Happy Birthday ...</h3>')
+print('</center>')
+print('</body>')
+print('</html>')
