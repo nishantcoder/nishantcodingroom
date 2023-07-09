@@ -1,0 +1,10 @@
+#!C:\Program Files\Python310\python.exe
+print("content-type:text/html\r\n\r\n")
+print('<html>')
+print('<head>')
+print('<title>hello world</title>')
+print('</head>')
+print('<body>')
+print('<h2>Hello World - This is miss suhani</h2>')
+print('</body>')
+print('</html>')

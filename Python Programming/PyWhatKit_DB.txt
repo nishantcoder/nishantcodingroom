@@ -1,0 +1,15 @@
+Date: 10/7/2023
+Time: 0:28
+Phone Number: +919031873882
+Message: This is a test message from Python
+--------------------
+Date: 10/7/2023
+Time: 0:29
+Phone Number: +919031873882
+Message: This is a test message from Python developed with pywhatkit and pyautogui
+--------------------
+Date: 10/7/2023
+Time: 0:31
+Phone Number: +917492913004
+Message: This is a test message from Python developed with pywhatkit and pyautogui
+--------------------
