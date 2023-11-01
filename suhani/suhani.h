@@ -6,22 +6,22 @@ int hcf(int a, int b)
         return a;
 }
 
-int add(int a, int b)
+int add(int a,int b)
 {
-    return (a + b);
+    return a + b;
 }
 
-int sub(int a, int b)
+int sub(int a,int b)
 {
-    return (a - b);
+    return a - b;
 }
 
 int sqrt(int a)
 {
-    return (a * a);
+    return a * a;
 }
 
-int mod(int a, int b)
+int mod(int a,int b)
 {
-    return (a % b);
+    return a % b;
 }
