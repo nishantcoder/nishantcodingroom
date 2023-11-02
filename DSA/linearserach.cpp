@@ -60,3 +60,19 @@ int main()
     
     return 0;
 }
+
+/*
+OUTPUT
+Enter the size of an array
+6
+Enter 6 elements in an array
+1  
+39
+40
+50
+43
+13
+Enter Element to be searched
+50
+Search Found.
+*/
