@@ -1,3 +1,5 @@
+//Stack using array
+
 #include <iostream>
 using namespace std;
 #define size 10
