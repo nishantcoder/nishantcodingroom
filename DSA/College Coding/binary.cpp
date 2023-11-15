@@ -54,7 +54,5 @@ int main()
         else
             cout<<"search not found"<<endl;
         
-    
-
-
 }
+
