@@ -23,23 +23,6 @@ class priority
     int front=-1;
     int rear=-1;
     int queue[N];
-    void sort()
-    {
-        for (int i = 0; i < N-1; i++)
-        {
-            for (int j = 0; j < N-1; j++)
-            {
-                if(queue[j]>queue[j+1])
-                {
-                   int t= queue[j];
-                   queue[j]=queue[j+1];
-                   queue[j+1]=t;
-                }
-            }
-            
-        }
-        
-    }
 
     public:
         void enqueue(int x)         //insertion at rear end
@@ -122,11 +105,9 @@ class priority
                 cout<<queue[front]<<endl;
             }
             
-            
         }
 
 };
-
 
 
 
