@@ -1,73 +1,100 @@
 #include <iostream>
 using namespace std;
 
-class class2
 
-class class1 //source class
+class invent2;      //forward declaration
+
+class invent1
 {
-    int code=0;
-    float price=0;
-
+    int code;
+    int item;
+    float price;
     public:
-        class1(int a,float b)
-        {
-            code=a;
-            price=b;
-        }
+    invent1(int a,int b,float c)
+    {
+        code=a;
+        item=b;
+        price=c;
 
-        int getcode()
-        {
-            return code;
-        }
+    }
+    void display()
+    {
+        cout<<"Code : "<<code<<"\n";
+        cout<<"Item : "<<item<<"\n";
+        cout<<"Price : "<<price<<"\n";
+    }
 
-        int getprice()
-        {
-            return price;
-        }
+    int getcode()
+    {
+        return code;
+    }
 
-        operator class2()   //class1 to class2 conversion
-        {
-            class2 temp;
-            temp.code=code;
-            temp.price=price;
-            return temp;
-        }
+    int getitem()
+    {
+        return item;
+    }
+    float getprice()
+    {
+        return price;
+    }
+
+    operator float()        //overloading float
+    {
+        return (item*price);
+    }
+};
+
+class invent2
+{
+private:
+    int code;
+    float value;
+public:
+    invent2()
+    {
+        code=0;
+        value=0;
+    }
+    invent2(int x,float y)
+    {
+        code=x;
+        value=y;
+
+    }
+
+    void display()
+    {
+        cout<<"Code : "<<code<<"\n";
+        cout<<"Value : "<<value<<"\n";
+    }
+
+    invent2(invent1 p)      //cpmstructor to connvert class 1 to class 2
+    {
+        code=p.getcode();
+        value=p.getitem()*p.getprice();
+    }
+    
 };
 
 
-class class2            //destination class
-{
-    int cod=0;
-    float pric=0;
-
-    public:
-        class2(int x,float y)
-        {
-            cod=x;
-            pric=y;
-        }
-
-        void putdata()
-        {
-            cout<<"code "<<cod<<"\n";
-            cout<<"Price "<<pric<<"\n";
-        }
-
-        class2(class1 p)
-        {
-            cod=p.getcode();
-            pric=p.getprice();
-        }
-};
 
 int main()
 {
-    class1 s1(1,678.9);
-    class2 dl;
-    float total;
-    total=s1;
-    dl=s1;
-    s1.getcode();
-    dl.putdata();
+
+    invent1 s1(100,5,176.9);
+    invent2 dl;
+    float total_value;
+    total_value=s1;     //class to basic
+    dl=s1;              //class to class
+
+    cout<<"Product Details INVENT 1 type\n";
+    s1.display();
+    cout<<"Stock Value\n";
+    cout<<"Value "<<total_value<<"\n";
+
+    cout<<"Product Details INVENT 2 type\n";
+    dl.display();
+
+    
     return 0;
 }
