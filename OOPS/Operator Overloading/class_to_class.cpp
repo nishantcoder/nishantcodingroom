@@ -50,12 +50,13 @@ private:
     int code;
     float value;
 public:
-    invent2()
+    invent2()       //default constructor
     {
         code=0;
         value=0;
     }
-    invent2(int x,float y)
+    
+    invent2(int x,float y) //if we need to pass some values 
     {
         code=x;
         value=y;
@@ -68,11 +69,12 @@ public:
         cout<<"Value : "<<value<<"\n";
     }
 
-    invent2(invent1 p)      //cpmstructor to connvert class 1 to class 2
+    invent2(invent1 p)      //constructor to connvert class 1 to class 2
     {
         code=p.getcode();
         value=p.getitem()*p.getprice();
-    }
+    }  
+    //this constructor will run automatically we create an object
     
 };
 
