@@ -1,65 +1,69 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
-//insertion at the end
-struct node
+
+class node
 {
+    public:
     int data;
     node *next;
 };
 
-void insert_node(node **head,int data)
+void insert(node **head, int data)
 {
-    node *newnode=new node;
-    
-    newnode->data=data;
-    node *temp=*head;
-    newnode->next=0;
+    node *newnode = new node;
 
-    if (*head==0)
+    newnode->data = data;
+    node *temp = *head;
+    newnode->next = 0;
+
+    if (*head == 0)
     {
-        *head=newnode;
+        *head = newnode;
         return;
     }
 
-    while (temp->next!=0)
+    while (temp->next != 0)
     {
-        temp=temp->next;
+        temp = temp->next;
     }
-    temp->next=newnode;
-
+    temp->next = newnode;
 }
 
-void print_node(node *temp)
+void print(node *temp)
 {
-    while (temp!=0)
+    while (temp != NULL)
     {
-        cout<<temp->data<<" ";
-        temp=temp->next;
-    }   
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
 }
 
-
-void del_at_beg(node *head)
+node *del_beg(node *head)
 {
-    node *temp;
-    temp=head;
-    head=head->next;
-    delete temp;
+    if (head == NULL)
+    {
+        return NULL;
+    }
+
+    node *temp = head;
+    head->next = head->next;
+    free(temp);
+
+    return head;
 }
 
 int main()
 {
-    node *head=0;
-    insert_node(&head,2);
-    insert_node(&head,8);
-    insert_node(&head,6);
-    insert_node(&head,4);
-    insert_node(&head,1);
-    print_node(head);
-    cout<<"\n";
-    del_at_beg(head);
-    print_node(head);
+    node *head = new node;
+    head->data = 10;
+    head->next = new node;
+    head->next->data = 20;
+    head->next->next = new node;
+    head->next->next->data = 30;
+    head->next->next->next = NULL;
+    del_beg(head);
+    print(head);
+
     return 0;
 }
-
-//2 8 6 4 1 
