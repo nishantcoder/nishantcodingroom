@@ -25,16 +25,16 @@ int partition(int arr[], int low, int up)
             swap(&arr[start], &arr[end]);
         }
     }
-    swap(&arr[low],&arr[end]);
+    swap(&arr[low], &arr[end]);
     return end;
 }
-int quicksort(int arr[],int low,int up)
+int quicksort(int arr[], int low, int up)
 {
-    if(low<up)
+    if (low < up)
     {
-        int lock=partition(arr,low,up);
-        quicksort(arr,low,lock-1);
-        quicksort(arr,lock+1,up);
+        int lock = partition(arr, low, up);
+        quicksort(arr, low, lock - 1);
+        quicksort(arr, lock + 1, up);
     }
 }
 int main()
@@ -51,7 +51,7 @@ int main()
         printf("...>");
         scanf("%d", &arr[i]);
     }
-    quicksort(arr,0,n-1);
+    quicksort(arr, 0, n - 1);
     printf("Sorted array is ");
     for (i = 0; i < n; i++)
     {
