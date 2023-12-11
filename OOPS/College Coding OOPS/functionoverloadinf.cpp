@@ -47,13 +47,13 @@ int main()
         case 2:
             cout << "Enter the side of Rectangle ";
             cin >> x>>y;
-            cout << "Area of sqaure is " << area(x, y) << "\n";
+            cout << "Area of Rectangle is " << area(x, y) << "\n";
 
             break;
         case 3:
             cout << "Enter the base and height of a triangle ";
             cin >> x >> z;
-            cout << "Area of sqaure is " << area(x, z) << "\n";
+            cout << "Area of Triangle is " << area(x, z) << "\n";
 
             break;
         default:
