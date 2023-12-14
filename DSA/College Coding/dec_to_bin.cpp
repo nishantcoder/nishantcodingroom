@@ -4,59 +4,39 @@ using namespace std;
 void convert(int dec)
 {
     int hold=dec;
-    int count=0,zero=0;
-    int rem=0,binr=0,binrem=0,bin=0;
-
-    int ary[100]={0},biny[100]={0};
-    
+    int count=0;
     do
     {
-        rem=hold%2;
         hold=hold/2;
-        //binr=binr*10+rem;
-        if (rem==0)
-        {
-            cout<<zero;
-            ary[count]=0;
-            
-        }
-        else
-        {
-            cout<<rem;
-            ary[count]=rem;
-        }
         count++;
-    }
-    while(hold!=0);
-    int j=0;
+    } while (hold!=0);
+    
+    int arr[count+1]={0};
     for (int i = count; i >=0; i--)
     {
-        biny[j]=ary[count];
-    }
-    
-    
- /*   while (binr!=0)
-    {
-        binrem=binr%10;
-        binr=binr/10;
-        if (binrem==0)
+        arr[i]=dec%2;
+        dec=dec/2;
+        if (i==0)
         {
-            cout<<zero;
+            arr[i]=0;
         }
-        else
-        cout<<binrem;
         
     }
-    */
-    cout<<bin;
-    
-    
+
+    for (int i = 0; i < count+1; i++)
+    {
+
+        cout<<arr[i];
+    }
 }
 
 
 int main()
 {
-    convert(20);
+    cout<<"Enter the decimal value to convert in to binary form \n...>>>";
+    int dec=0;
+    cin>>dec;
+    convert(dec);
     
     return 0;
 }

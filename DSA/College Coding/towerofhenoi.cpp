@@ -16,7 +16,7 @@ void hanoi(int n,char _fromrod,char _torod,char _aux_rod)
 
 int main()
 {
-    int N=3;
+    int N=2;
     hanoi(N,'N','S','J');
     
     
