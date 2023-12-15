@@ -69,4 +69,12 @@ int main()
     display();
     deque();
     display();
+
+    return 0;
 }
+
+/*
+output
+8 9 10 3 1 
+9 10 3 1 
+*/
