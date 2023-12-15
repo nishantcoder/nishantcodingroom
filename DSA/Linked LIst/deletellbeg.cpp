@@ -38,7 +38,14 @@ void print(node *temp)
         temp = temp->next;
     }
 }
+void insert_node(node **head,int data)
+{
+    node *newnode=new node;
+    newnode->data=data;
+    newnode->next=*head;
+    *head=newnode;
 
+}
 node *del_beg(node *head)
 {
     if (head == NULL)
@@ -47,22 +54,20 @@ node *del_beg(node *head)
     }
 
     node *temp = head;
-    head->next = head->next;
-    free(temp);
+    head = head->next;
+    delete (temp);
 
     return head;
 }
 
 int main()
 {
-    node *head = new node;
-    head->data = 10;
-    head->next = new node;
-    head->next->data = 20;
-    head->next->next = new node;
-    head->next->next->data = 30;
-    head->next->next->next = NULL;
-    del_beg(head);
+    node *head = NULL;
+    insert_node(&head,12);
+    insert_node(&head,13);
+    insert_node(&head,14);
+    print(head);
+    head=del_beg(head);
     print(head);
 
     return 0;
