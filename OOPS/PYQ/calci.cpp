@@ -1,22 +1,28 @@
+/*
+PYQ 2020 Question number 2 (b) BEU/AKU 
+Creating Four Function calculator
+strcmp returns 0 if strings are identical else returns 1
+*/
+
 #include <iostream>
 using namespace std;
 
-int add(int a,int b)
+float add(float a,float b)
 {
     return a+b;
 }
 
-int sub(int a,int b)
+float sub(float a,float b)
 {
     return a-b;
 }
 
-int mul(int a,int b)
+float mul(float a,float b)
 {
     return a*b;
 }
 
-int division(int a,int b)
+float division(float a,float b)
 {
     return a/b;
 }
@@ -31,10 +37,11 @@ void menu(void)
 
 }
 
-int main()
+float main()
 {
     char run='y';
-    int option=0,x=0,y=0;
+    int option=0;
+    float x=0,y=0;
     while (run=='y')
     {
         menu();
