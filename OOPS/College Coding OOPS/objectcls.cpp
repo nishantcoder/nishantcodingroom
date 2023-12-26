@@ -1,3 +1,7 @@
+/*
+This code makes you understand that how we can define a function Inside the class
+*/
+
 #include <iostream>
 using namespace std;
  

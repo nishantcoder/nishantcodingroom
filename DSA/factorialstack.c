@@ -1,8 +1,7 @@
+//Factorial using stack
 #include <stdio.h>
 #define N 15
 int top=-1;
-
-
 int stack[N];
 
 void push(int x)
@@ -15,9 +14,7 @@ void push(int x)
     {
         top++;
         stack[top]=x;
-    }
-    
-    
+    } 
 }
 
 int pop()
@@ -33,10 +30,19 @@ int main()
     int num=0;
     printf("Enter a number ");
     scanf("%d",&num);
+    int hold=num;
     
     while (num!=0)
     {
         push(num);
         num--;
-    }  
+    } 
+    while (hold!=0)
+    {
+        fact=fact*pop();
+        hold--;
+    }
+    printf("%d",fact);
+    return 0;
+    
 }
