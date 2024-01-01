@@ -1,4 +1,4 @@
-//SINGLE INHERITANCE : PUBLIC
+//Multilevel INHERITANCE
 
 #include <iostream>
 using namespace std;
