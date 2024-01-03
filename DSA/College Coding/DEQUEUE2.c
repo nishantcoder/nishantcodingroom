@@ -2,6 +2,7 @@
 /*
 In this DEQUEUE, Insertion is possible at both the Ends front and rear
 but the deletion is only possible from front end
+Implementation using Circular array
 */
 #include <stdio.h>
 #define N 7
