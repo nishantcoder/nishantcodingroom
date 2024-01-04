@@ -37,14 +37,7 @@ int peek()
     return stack[top];
 }
 
-void display()
-{
-    for (int i = top; i >= 0; i--)
-    {
-        printf("%d  ", stack[i]);
-    }
-    printf("\n");
-}
+
 
 void evaluate(char exp[])
 {
