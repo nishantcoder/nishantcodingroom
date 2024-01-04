@@ -27,8 +27,8 @@ int pop()
     }
     else
     {
-        return stack[top];
-        top--;
+        return stack[top--];
+        
     }
 }
 
@@ -48,16 +48,37 @@ void display()
 
 void evaluate(char exp[])
 {
-    for (int i = 0; i != '\0'; i++)
+    int a,b;
+    for (int i = 0; exp[i] != '\0'; i++)
     {
         if (isdigit(exp[i]))
-            push(exp[i]);
+            push(exp[i]-'0');
 
-        if (is(exp[i]))
+        switch (exp[i])
         {
-            int a = pop();
-            int b = pop();
-            push(b + a);
+        case '+':
+            a=pop();
+            b=pop();
+            push(b+a);
+            break;
+        case '-':
+            a=pop();
+            b=pop();
+            push(b-a);
+            break;
+        case '*':
+            a=pop();
+            b=pop();
+            push(b*a);
+            break;
+        case '/':
+            a=pop();
+            b=pop();
+            push(b/a);
+            break;
+        
+        default:
+            break;
         }
     }
 
@@ -73,3 +94,9 @@ int main()
 
     return 0;
 }
+
+/*
+OUTPUT
+Enter the Postfix expression 456*+
+The value of expression is 34
+*/
