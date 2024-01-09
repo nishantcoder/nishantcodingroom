@@ -1,3 +1,5 @@
+//insertion and deletion at/from beginning 
+
 #include <stdio.h>
 #include <stdlib.h>
 
