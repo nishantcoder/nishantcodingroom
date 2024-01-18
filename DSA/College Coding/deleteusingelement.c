@@ -21,7 +21,7 @@ void delete(int key)
     struct node *prev,*temp;
     prev=head;
     temp=head;
-    int flag==0;
+    int flag=0;
     if (prev==0)
     {
         printf("Empty list\n");
@@ -32,11 +32,13 @@ void delete(int key)
         temp = head;
         head = temp->next;
         free(temp);
+        flag=1;
     }
 
     else if(prev->next->data==key)
     {
         prev->next=prev->next->next;
+        flag=1;
     }
     
     
@@ -99,4 +101,5 @@ int main()
     display();
     delete(5);
     display();
+    return 0;
 }
