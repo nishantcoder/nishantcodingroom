@@ -21,7 +21,6 @@ void delete(int key)
     struct node *prev,*temp;
     prev=head;
     temp=head;
-    int flag=0;
     if (prev==0)
     {
         printf("Empty list\n");
@@ -32,13 +31,11 @@ void delete(int key)
         temp = head;
         head = temp->next;
         free(temp);
-        flag=1;
     }
 
     else if(prev->next->data==key)
     {
         prev->next=prev->next->next;
-        flag=1;
     }
     
     
@@ -51,7 +48,6 @@ void delete(int key)
             {
                 prev=temp;
                 temp=temp->next;
-                flag=1;
                 break;
             }
             else
@@ -59,12 +55,7 @@ void delete(int key)
         }
         prev->next=temp->next;
         free(temp);        
-    }  
-    if (flag==0)
-    {
-        printf("Element is not present in the list\n");
-    }
-      
+    }    
     
 }
 
