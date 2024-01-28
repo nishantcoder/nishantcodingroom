@@ -5,7 +5,7 @@ class Base
 {
     
     public:
-    void display()
+    void display()               
     {
         cout<<"Display Base\n";
     }
