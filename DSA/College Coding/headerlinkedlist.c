@@ -6,7 +6,7 @@ struct node
 {
     int data;
     struct node *next;
-}*head;
+}*head=0;
 
 int count=0;
 
