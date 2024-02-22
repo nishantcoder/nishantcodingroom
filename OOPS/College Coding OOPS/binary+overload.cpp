@@ -47,10 +47,10 @@ class Distance
         }
         return temp;
     }
-    friend Distance operator+(int,Distance); 
+    friend Distance operator+(float,Distance); 
 };
 
-Distance operator+(int d,Distance b)
+Distance operator+(float d,Distance b)
 {
     Distance temp;
     temp.feet=d+b.feet;
@@ -71,7 +71,7 @@ int main()
     d3.display();
     d3=d3+5;
     d3.display();
-    d3=6+d3;
+    d3=10.5+d3;
     d3.display();
     
     return 0;

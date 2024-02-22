@@ -2,51 +2,45 @@
 
 #include <iostream>
 using namespace std;
-class num2;   
-class num1
+class beta;   
+class alpha
 {
     int a;
     
        
     public:
-    num1()
+    alpha()
     {
-        a=0;
+        a=7;
     }
-    num1(int x)
-    {
-        a=x;
-    }
+  
     void show()
     {
         cout<<"Value of a = "<<a<<endl;
     }
-    friend void sum(num1 x,num2 y);
+    friend void sum(alpha x,beta y);
     
 };
 
-class num2
+class beta
 {
     int b;
     
        
     public:
-    num2()
+    beta()
     {
-        b=0;
+        b=3;
     }
-    num2(int x)
-    {
-        b=x;
-    }
+   
     void show()
     {
         cout<<"Value of b = "<<b<<endl;
     }
-    friend void sum(num1 x,num2 y);
+    friend void sum(alpha x,beta y);
 };
 
-void sum(num1 x,num2 y)
+void sum(alpha x,beta y)
 {
     int sum=0;
     sum=x.a+y.b;
@@ -55,8 +49,8 @@ void sum(num1 x,num2 y)
 
 int main()
 {
-    num1 obj1(40);
-    num2 obj2(50);
+    alpha obj1;
+    beta obj2;
     sum(obj1,obj2);
     
     return 0;
@@ -64,5 +58,5 @@ int main()
 
 /*
 OUTPUT
-The sum of a and b is 90
+The sum of a and b is 10
 */
