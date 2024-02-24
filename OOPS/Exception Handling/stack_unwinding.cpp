@@ -19,7 +19,7 @@ void fun1() throw(int)
 void fun2() throw(int)
 {
     cout<<"We are in function in 2 \n";
-    throw 903;
+    fun1();
     cout<<"End of function 2\n";
 }
 
@@ -48,6 +48,7 @@ int main()
 OUTPUT
 We are in function in 3 
 We are in function in 2 
-Exception caught : 903
+We are in function in 1 
+Exception caught : 40
 End of function 3
 */
