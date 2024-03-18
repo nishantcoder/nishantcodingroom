@@ -71,3 +71,16 @@ int main()
 
     return 0;
 }
+/*
+Enter the size of array 7
+Enter the elements in array 
+45
+65
+1
+39
+23
+9
+15
+Before Sorting 45 65 1 39 23 9 15 
+After Sorting 1 9 15 23 39 45 65
+*/

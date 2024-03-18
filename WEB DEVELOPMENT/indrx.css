@@ -1,0 +1,46 @@
+body{
+    background-color:rgb(219, 248, 248);
+    
+}
+header{
+    height: 120px;
+    width: 1920px;
+    background-color:papayawhip;
+}
+
+.logo
+{
+    border-radius: 50px;
+    float: left;
+    text-align: center;
+}
+
+.heading >.title,div{
+    color:brown;
+    padding-left: 38%;
+    font-size: 45px;
+    font-style: bold,inherit;
+    float:left;
+}
+.heading >div{
+    color:brown;
+    padding-left: 30%;
+    font-size: 25px;
+    float:left;
+}
+
+#buttonstrip
+{
+    height: 50px;
+    width: 1440px;
+    background-color:rgb(225, 140, 175);
+}
+
+footer
+{
+    height: 50px;
+    width: 1920px;
+    background-color:rgb(225, 193, 140);
+     
+    
+}
