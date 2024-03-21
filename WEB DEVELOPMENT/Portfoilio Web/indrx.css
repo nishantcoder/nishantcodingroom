@@ -1,0 +1,166 @@
+body{
+    background-color:rgb(219, 248, 248);
+    
+}
+header{
+    height: 120px;
+    width: 1920px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color:papayawhip;
+}
+
+
+#logo
+{
+    border-radius: 50px;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    border:solid black;
+}
+
+#title{
+    margin-top: -90px;
+    margin-left:700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:#e8142c;
+}
+.title{
+    margin-top: 0px;
+    margin-left:600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#d21fab;
+}
+.college{
+    margin-top: 0px;
+    margin-left:615px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#b228d8;
+}
+footer
+{
+    height: 50px;
+    width: 1920px;
+   
+     
+    
+}
+
+#about
+{
+    height: 400px;
+    width: 250px;
+    opacity: 0%;
+    margin-left: 15px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border:2px solid #e8142c;
+    padding: 15px;
+}
+
+#about:hover
+{
+    transition:all 0.9s;
+    margin-top:25px;
+    opacity: 100;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #070606ca;
+    color:white;
+    
+
+}
+
+#current{
+    height: 400px;
+    width: 250px;
+    opacity: 0;
+    margin-left: 350px;
+    margin-top: -300px;
+    border-radius: 10px;
+    border:2px solid #e8142c;
+    padding: 15px;
+}
+
+
+#current:hover
+{
+    transition:all 0.9s;
+    margin-top:-500px;
+    opacity: 100;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #070606ca;
+    color:white;
+    
+
+}
+
+.foot
+{
+    height: 200px;
+    width:1920px;
+    border:2px solid #e8d4ed18 ;
+    border-radius: 5px;
+    background: #cb6de420;
+}
+
+.mail{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 50px;
+    height: 40px;
+    width: 100px;
+    border-top: 10px solid #EA4335;
+    border-bottom: 10px solid #EA4335;
+    border-left: none;
+    border-right: none;
+    text-overflow: ellipsis;
+    font-size: 15px bold;
+    font-style: italic;
+    background-color: rgb(56, 3, 3);
+    color: #fbbc05;
+    border-radius: 15%;
+}
+.mail:hover{
+    transition: all 0.3s;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-left: 7px solid #ea35ab;
+    border-right: 7px solid #6748d7;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 15%;
+    margin-left: 5px;
+    color: #ea35ab;
+}
+
+.mail:active{
+    transition: all 0.3s;
+    background-color: white;
+    width: 130px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-left: 7px solid #6748d7;
+    border-right: 7px solid #ea35aba4;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20%;
+    color: #6748d7;
+}
+.mail:hover::after {
+    transition: all 0.4s;
+    content: " >>";
+}
