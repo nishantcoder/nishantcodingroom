@@ -1,15 +1,20 @@
-body{
-    background-color:rgb(219, 248, 248);
+body,header{
+    background:rgb(195, 214, 226);
     
 }
 header{
     height: 120px;
-    width: 1920px;
+    width: 1000px;
     margin-top: -10px;
     margin-left: -10px;
-    background-color:papayawhip;
 }
 
+.line{
+    width: 1000px;
+    height:5px;
+    color:rgba(255, 39, 97, 0.679);
+    border:5px;
+}
 
 #logo
 {
@@ -23,7 +28,7 @@ header{
 
 #title{
     margin-top: -90px;
-    margin-left:700px;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
     font-weight: bold;
@@ -31,7 +36,7 @@ header{
 }
 .title{
     margin-top: 0px;
-    margin-left:600px;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -39,7 +44,7 @@ header{
 }
 .college{
     margin-top: 0px;
-    margin-left:615px;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -48,8 +53,7 @@ header{
 footer
 {
     height: 50px;
-    width: 1920px;
-   
+   padding-top: 50px;
      
     
 }
@@ -58,11 +62,11 @@ footer
 {
     height: 400px;
     width: 250px;
-    opacity: 0%;
+    opacity: 100%;
     margin-left: 15px;
     margin-top: 100px;
-    border-radius: 10px;
-    border:2px solid #e8142c;
+    border-radius: 20px;
+    border:5px solid #e8142d00;
     padding: 15px;
 }
 
@@ -73,8 +77,9 @@ footer
     opacity: 100;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #070606ca;
+    background: #0706063e;
     color:white;
+    border:5px solid #07fff7;
     
 
 }
@@ -82,11 +87,11 @@ footer
 #current{
     height: 400px;
     width: 250px;
-    opacity: 0;
+    opacity: 100%;
     margin-left: 350px;
-    margin-top: -300px;
+    margin-top: -435px;
     border-radius: 10px;
-    border:2px solid #e8142c;
+    border:5px solid #e8142d00;
     padding: 15px;
 }
 
@@ -98,19 +103,20 @@ footer
     opacity: 100;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #070606ca;
+    background: #07060662;
     color:white;
+    border:5px solid #07fff7;
     
 
 }
 
 .foot
 {
-    height: 200px;
-    width:1920px;
+    height: 100px;
     border:2px solid #e8d4ed18 ;
     border-radius: 5px;
     background: #cb6de420;
+    position: absolute;
 }
 
 .mail{
@@ -163,4 +169,188 @@ footer
 .mail:hover::after {
     transition: all 0.4s;
     content: " >>";
+}
+
+#myself,#present{
+    color:#00d2da;
+    opacity: 100%;
+    font-size: 25px;
+    text-decoration: underline;
+    
+}
+
+
+
+#picname{
+    opacity: 80%;
+    color:rgb(0, 242, 255);
+    font-size: 25px;
+    margin-top: 200px;
+    margin-left: 70px;
+    text-decoration: underline;
+    
+    
+}
+
+.pic{
+    opacity: 0%;
+    margin-top: -250px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.pic:hover{
+    opacity: 100%;
+}
+
+.nis{
+    border-radius: 15px;
+}
+
+.skills{
+    height: 400px;
+    width:280px;
+    margin-top: -400px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.skills:hover{
+    transition: all 0.7s;
+    margin-top: -500px;
+    border:5px solid #07fff7;
+    background: #00d3da1c;
+
+}
+
+.frame{
+    opacity: 10%;
+    margin-top: 30px;
+    margin-left: 320px;
+    border:5px solid #e8142d00;
+    border-radius: 20px;
+    width: 310px;
+
+}
+
+.frame:hover{
+    transition: all 0.7s;
+    opacity: 100%;
+    margin-top: -50px;
+    border:5px solid #07fff7;
+
+}
+
+.tit{
+    opacity: 100%;
+    margin-left: 110px;
+    margin-top: 10px;
+    text-decoration: underline;
+    color:#00d2da;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+.list{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(18, 16, 16);
+}
+
+.skillset{
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 100px;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+#label{
+    text-align: center;
+}
+
+
+#cpp{
+    margin-top: -55px;
+    margin-left: 100px;
+}
+#python{
+    margin-top: -56px;
+    margin-left: 200px;
+}
+#html{
+    margin-top: -57px;
+    margin-left: 300px;
+}
+#css{
+    margin-top: -58px;
+    margin-left: 400px;
+}
+#js{
+    margin-top: -55px;
+    margin-left: 500px;
+}
+#adobe{
+    margin-top: -55px;
+    margin-left: 600px;
+}
+#qt{
+    margin-top: -55px;
+    margin-left: 700px;
+}
+#mysql{
+    margin-top: -58px;
+    margin-left: 800px;
+}
+.icons{
+    border-radius: 50%;
+}
+
+.icons:hover{
+    transition: all 0.7s;
+    transform: scale(1.5);
+    box-shadow: 0px 8px 15px rgb(0, 242, 255);
+}
+.social{
+    margin-left: 200px;
+    margin-top: 150px;
+
+}
+
+
+
+#git{
+    margin-left: 100px;
+    margin-top:-53px;
+    
+}
+
+#x{
+    margin-left: 200px;
+    margin-top:-53px;
+    
+}
+
+#linkdin{
+    margin-left: 300px;
+    margin-top:-53px;
+    
+}
+.sicons{
+    border-radius: 50px;
+    
+}
+.sicons:hover{
+    transition: all 0.4s;
+    transform: scale(1.3);
+    box-shadow: 0px 8px 15px rgba(255, 0, 208, 0.679);
+}
+.sicons:active{
+    transition: all 0.3s;
+    transform: scale(0.5);
 }
