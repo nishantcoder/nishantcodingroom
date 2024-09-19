@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("C Programs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a0a90a2b07ed889c5c7f443299cd3a88fb4b50d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d2ed5bd6c6bcb96bd73819d080f2e75050abc56")]
 [assembly: System.Reflection.AssemblyProductAttribute("C Programs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("C Programs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

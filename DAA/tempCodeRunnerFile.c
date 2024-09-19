@@ -1,0 +1,1 @@
+CLOCKS_PER_SEC

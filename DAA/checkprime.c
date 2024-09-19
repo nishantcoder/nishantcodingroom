@@ -7,7 +7,7 @@ int main()
     time_start=clock();
     int flag = 0;
     int i = 0;
-    int num = 789845612;
+    int num = 1111711;
 
     printf("Enter a number \t");
     scanf("%d", &num);
