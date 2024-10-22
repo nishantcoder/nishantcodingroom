@@ -3,21 +3,22 @@
 #include <time.h>
 int main()
 {
-    clock_t time_start,time_end;
-    time_start=clock();
+    
     int flag = 0;
     int i = 0;
-    int num = 1111711;
+    int num = 0;
 
     printf("Enter a number \t");
     scanf("%d", &num);
+    clock_t time_start,time_end;
+    time_start=clock();
     int sq=sqrt(num);
-    for (i = 2; i <= sq; i++)
+    for (i = 2; i < sq; i++)
     {
         if (num % i == 0)
         {
             flag = 1;
-            break;
+            
         }
     }
     if (flag == 0)
