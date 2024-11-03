@@ -64,3 +64,18 @@ int main(){
 
     return 0;
 }
+/*
+OUTPUT 
+page 1  1  -  - 
+page 2  1  2  - 
+page 5  1  2  5 
+page 1  1  2  5  * 
+page 7  7  2  5 
+page 3  7  3  5 
+page 4  7  3  4 
+page 1  1  3  4 
+page 3  1  3  4  * 
+page 2  1  2  4 
+Total Page Hits 2
+Total Page Faults 8
+*/
