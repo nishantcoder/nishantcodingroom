@@ -1,5 +1,5 @@
-// First Come First Serve CPU Scheduling Algorithms
-// 24 October 2024 BPMCE Computer Centre
+// First In First Out Page Replacement Algorithm
+// __ October 2024 BPMCE Computer Centre
 #include <stdio.h>
 #define page_size 10
 #define frame_size 3
