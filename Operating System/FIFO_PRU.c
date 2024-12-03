@@ -1,11 +1,11 @@
 // First In First Out Page Replacement Algorithm
 // __ October 2024 BPMCE Computer Centre
 #include <stdio.h>
-#define page_size 10
+#define page_size 20
 #define frame_size 3
 
 int main(){
-    int page[page_size]={1,2,5,1,7,3,4,1,3,2};
+    int page[page_size]={7,0,1,2,0,3,0,4,2,3,0,3,2,1,7,0,1,4,2,3}; //{1,2,5,1,7,3,4,1,3,2};
     int frame[frame_size];
     int page_hit=0,page_fault=0;
     int index=0;

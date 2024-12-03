@@ -1,4 +1,4 @@
-// Insertion Sort
+// Quick Sort
 // 20 October 2024 BPMCE Computer Centre
 
 #include <stdio.h>
@@ -43,13 +43,13 @@ int main()
     int n=0,temp=0,j=0;
     printf("Enter the size of the array\t");
     scanf("%d",&n);
-    time_start=clock();
+    
     int arr[n];   //0,1,2,...,99
     for (int i = 0; i < n; i++)
     {
         arr[i]=rand();
     }
-
+    time_start=clock();
    quicksort(arr,0,n-1);
     time_end=clock();
    /* for (int i = 0; i < n; i++)
