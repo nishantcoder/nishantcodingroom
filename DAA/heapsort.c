@@ -32,7 +32,7 @@ int maxheapify(int arr[], int n, int i)
 
 int heapsort(int arr[], int n)
 {
-    /*here i am using maxheap, that means it will sort in desceding order*/
+    
     for (int i = n/2; i >=1; i--)//build max heap
     {
         maxheapify(arr,n,i);
