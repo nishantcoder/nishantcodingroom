@@ -11,16 +11,16 @@ int swap(int *a, int *b)
 int maxheapify(int arr[], int n, int i)
 {
     int largest=i;
-    int leaf=(2*i);
-    int root=(2*i)+1;
-    while (leaf<=n && arr[leaf]>arr[largest])
+    int left=(2*i);
+    int right=(2*i)+1;
+    while (left<=n && arr[left]>arr[largest])
     {
-        largest=leaf;
+        largest=left;
     }
 
-    while (root<=n && arr[root]>arr[largest])
+    while (right<=n && arr[right]>arr[largest])
     {
-        largest=root;
+        largest=right;
     }
 
     if (largest!=i)
@@ -59,14 +59,18 @@ int main()
     scanf("%d",&n);
     
     int arr[n];   //0,1,2,...,99
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
         arr[i]=rand();
     }
     time_start=clock();
    heapsort(arr,n);
     time_end=clock();
- 
+ /* for (int i = 0; i < n; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\n");*/
     printf("Exection time %lf\n",(double)(time_end-time_start)/CLOCKS_PER_SEC);  
     return 0;
 }
