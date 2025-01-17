@@ -1,11 +1,11 @@
 // Least Recently Used (LRU) Page Replacement Algorithm
 // __ October 2024 BPMCE Computer Centre
 #include <stdio.h>
-#define page_size 16
+#define page_size 14
 #define frame_size 3
 
 int main() {
-    int page[page_size] = {7,0,1,2,0,3,0,4,2,3,0,3,2,0,1,2};
+    int page[page_size] = {7,0,1,2,0,3,0,4,2,3,0,3,2,3};
     int frame[frame_size];
     int access_time[frame_size];
     int page_hit = 0, page_fault = 0, time = 0;
